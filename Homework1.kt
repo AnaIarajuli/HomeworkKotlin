@@ -9,6 +9,7 @@ fun main() {
 
     println(n1.toString())
     println(n1.equals(n2))
+    println(n1.symmetry())
 
 }
 
@@ -30,9 +31,9 @@ open class Point {
         return false
     }
 
-    fun symmetry(x: Int, y: Int): Int {
-        if (x != 0 && y != 0)
-            return -x - y
-        return 0
+    fun symmetry(): Pair<Int, Int> {
+
+        return Pair(-x, - y)
+
     }
 }
