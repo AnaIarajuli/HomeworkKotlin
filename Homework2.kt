@@ -11,6 +11,7 @@ fun main() {
     println(f1.equals(f2))
     println(f1.toString())
     println(f2.toString())
+    println(f1.addition(f2))
 
 
 }
@@ -29,11 +30,8 @@ class Fraction {
         }
         return false
     }
-//    fun multiplication(other: Any?) {
-//        denominator * other.denominator
-//    }
 
-    fun addition(other: Any?): Double {
+    fun addition(other: Fraction): Double {
         if (other is Fraction) {
             if (denominator == other.denominator){
                 return numerator/denominator + other.numerator/other.denominator
