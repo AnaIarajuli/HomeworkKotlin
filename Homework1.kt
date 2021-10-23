@@ -31,9 +31,9 @@ open class Point {
         return false
     }
 
-    fun symmetry(): Pair<Int, Int> {
+    fun symmetry(): Point {
 
-        return Pair(-x, - y)
+        return Point(-x, - y)
 
     }
 }
